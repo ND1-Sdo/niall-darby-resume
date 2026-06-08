@@ -10,6 +10,14 @@ python3 -m http.server 8765
 
 Open http://localhost:8765
 
+## Regenerate the PDF resume
+
+After editing `resume-print.html`, rebuild the downloadable PDF:
+
+```bash
+bash scripts/generate-resume-pdf.sh
+```
+
 ## Deploy on Render
 
 1. Push this folder to its own GitHub repo.
