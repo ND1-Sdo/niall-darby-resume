@@ -563,6 +563,24 @@ a:hover {
   line-height: 1.55;
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.tech-stack span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
 .timeline-content ul {
   list-style: none;
   display: flex;
