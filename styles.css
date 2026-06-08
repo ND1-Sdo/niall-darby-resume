@@ -357,6 +357,30 @@ a:hover {
   border: 1px solid var(--border);
 }
 
+.current-role-badge {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.badge-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-dark);
+  margin-bottom: 8px;
+}
+
+.current-role-badge p {
+  color: var(--text);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
 .summary-card p {
   color: var(--text-muted);
   margin-bottom: 16px;
