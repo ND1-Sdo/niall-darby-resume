@@ -5,3 +5,10 @@ services:
     runtime: static
     buildCommand: echo "Static resume site — no build required"
     staticPublishPath: ./
+    headers:
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=0, must-revalidate
