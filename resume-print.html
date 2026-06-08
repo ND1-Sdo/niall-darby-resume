@@ -6,180 +6,211 @@
   <link rel="stylesheet" href="resume-print.css">
 </head>
 <body>
-  <div class="page">
-    <header class="header">
-      <div class="header-main">
-        <h1>Niall Darby</h1>
-        <p class="title">Technical Support Engineer &amp; User Operations Specialist</p>
-        <p class="subtitle">LinkedIn EMEA HQ · EMEA RIT Department · Dublin, Ireland</p>
+
+  <header class="pdf-header">
+    <img class="pdf-photo" src="assets/photo.png" alt="Niall Darby">
+    <div>
+      <h1>Niall Darby</h1>
+      <p class="pdf-title">Technical Support Engineer &amp; User Operations Specialist</p>
+      <p class="pdf-location">LinkedIn EMEA HQ · Dublin, Ireland</p>
+    </div>
+    <div class="pdf-contact">
+      <div>089 611 1810</div>
+      <div>nialldarby11@icloud.com</div>
+      <div>linkedin.com/in/niall-darby-8b8266a9</div>
+      <div>resume-1-1.onrender.com</div>
+    </div>
+  </header>
+
+  <section class="section summary">
+    <span class="section-label">About</span>
+    <h2>Professional Summary</h2>
+    <div class="current-role">
+      <div class="label">Current role</div>
+      <p>Based at <strong>LinkedIn's EMEA Headquarters in Dublin</strong>, operating within the <strong>EMEA RIT (Regional IT) Department</strong>. In this onsite role, I help facilitate the technical backbone of one of the world's most influential technology ecosystems — staying at the pulse of global enterprise operations and ensuring high-stakes technical environments remain resilient and scalable.</p>
+    </div>
+    <p>Proactive Technical Support Engineer and User Operations Specialist with over <strong>9 years of experience</strong> delivering hands-on technical support, infrastructure troubleshooting, and escalated problem-solving in high-growth enterprise environments.</p>
+    <p>Highly proficient in administering core SaaS platforms, identity ecosystems (Okta, Azure AD), and endpoint management. With an active focus on using advanced AI/LLM tools (Cursor, Agentic Workflows) and cutting-edge models alongside scripting (PowerShell, Bash) to automate repetitive tasks, I excel at diagnosing complex issues and scaling IT operations.</p>
+    <p>Known for looking beyond immediate fixes to ask <em>"why did this happen?"</em>, actively partnering with engineering and product teams to deploy systemic solutions and elevate the overall customer experience.</p>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Expertise</span>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>AI Models &amp; Ecosystems</h3><p>OpenAI (GPT-5.5, GPT-5.4, Codex 5.3/5.2), Anthropic Claude (Opus 4.8), Google Gemini, Multi-Agent Workflows, Prompt Engineering</p></div>
+      <div class="skill-card"><h3>Scripting &amp; Automation</h3><p>PowerShell, Bash, Python (Familiar), Cursor IDE</p></div>
+      <div class="skill-card"><h3>SaaS &amp; Service Management</h3><p>JIRA, Orbit, Zendesk, ServiceNow, Oracle DB, CRM Platforms, Stripe Enterprise Billing, Slack Admin, Microsoft 365, Atlassian</p></div>
+      <div class="skill-card"><h3>Identity &amp; Endpoint Management</h3><p>Okta Admin, Microsoft Authenticator, Active Directory, Azure AD, SSO, MFA; AirWatch, Workspace ONE, Autopilot/Intune, JAMF Pro</p></div>
+      <div class="skill-card"><h3>Networking &amp; Infrastructure</h3><p>DNS, DHCP, VPNs, Core Routing, VDI (Omnissa/VMware Horizon), NEST, Ericsson Network Tools, Cell Tower/RAN Analysis, Encryption (BitLocker/FileVault)</p></div>
+      <div class="skill-card"><h3>Hardware &amp; AV</h3><p>macOS, iOS, Windows PC/Laptops, Break/Fix, Video Conferencing, Printer/Peripheral configuration</p></div>
+      <div class="skill-card"><h3>Full-Stack &amp; Cloud</h3><p>Supabase, Flutter/Dart, Render, Cloudflare, Xcode, App Store Connect, Transporter, GitHub Actions, Stripe Enterprise, JIRA, Zendesk</p></div>
+    </div>
+    <p class="frameworks">ITIL-aligned Incident, Problem &amp; Change Management · Strict SLA adherence</p>
+  </section>
+
+  <section class="section">
+    <span class="section-label">Career</span>
+    <h2>Professional Experience</h2>
+
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Production Engineering &amp; Enterprise IT Support</h3>
+          <p class="job-company">LinkedIn EMEA HQ Dublin <span>EMEA RIT · HCLTech · Contract</span></p>
+        </div>
+        <div class="job-meta">Jul 2025 – Present<br>Dublin · On-site</div>
       </div>
-      <div class="header-contact">
-        <div>089 611 1810</div>
-        <div>nialldarby11@icloud.com</div>
-        <div>linkedin.com/in/niall-darby-8b8266a9</div>
+      <p class="job-intro">Onsite within LinkedIn's EMEA Regional IT department — supporting the technical backbone of a global technology ecosystem. Frontline IT for LinkedIn employees worldwide across Windows and macOS, new hire onboarding, and day-to-day production engineering support.</p>
+      <ul>
+        <li>Manage Active Directory, Azure AD, <strong>Okta Admin Console</strong>, and ESP authentication — ensuring users are enrolled and up to date, MFA resets, account lockouts, SSO failures, LDAP password resets, and security group provisioning. Verified <strong>Microsoft Authenticator</strong> enrollment for new and existing users.</li>
+        <li>Onboarded employees to <strong>LinkedIn Recruiter</strong>, <strong>Sales Navigator</strong>, <strong>Tableau</strong>, <strong>Microsoft Dynamics</strong>, and <strong>Office 365</strong> — licence assignment, SSO routing, and network access.</li>
+        <li>Provisioned new <strong>MacBook and Windows</strong> devices — Autopilot/Intune (AAD) and <strong>AirWatch / Workspace ONE</strong> MDM enrollment, certificates, compliance policies, and encryption (BitLocker/FileVault).</li>
+        <li>Administered <strong>AirWatch / Workspace ONE</strong> for device compliance — remediating non-compliant endpoints and maintaining MDM records across LinkedIn's global fleet.</li>
+        <li>Resolved <strong>Microsoft 365</strong> issues — Outlook send/receive failures, Teams sign-in errors, OneDrive sync conflicts, SharePoint permissions, mailbox provisioning, and cross-application data synchronisation.</li>
+        <li>Maintained <strong>hardware stock inventory</strong> — tracking devices in stock, deployed, returned, and in repair for spare pool and new hire fulfilment.</li>
+        <li>Configured <strong>user permissions and profiles</strong> — security groups, app access, mailbox/SharePoint rights, VPN privileges, and role-based tooling access.</li>
+        <li>Supported <strong>printer and print network infrastructure</strong> — driver deployment, queue configuration, mapping, and connectivity troubleshooting.</li>
+        <li>Supported <strong>VDI</strong> (Omnissa/VMware Horizon) — connection rejections, certificate mismatches, kernel panics, and hardware failures.</li>
+        <li>Managed incidents through <strong>ServiceNow</strong>, <strong>JIRA</strong>, and <strong>Orbit</strong> — liaising with engineering, infrastructure, security, and facilities teams with SLA follow-through.</li>
+        <li>Used Slack for cross-department coordination — root cause analysis, documentation, and handover for global support continuity.</li>
+      </ul>
+      <div class="tech-tags"><span>Okta Admin</span><span>Microsoft Authenticator</span><span>AirWatch</span><span>Workspace ONE</span><span>Intune</span><span>ServiceNow</span><span>JIRA</span><span>Orbit</span><span>Tableau</span><span>Dynamics 365</span></div>
+    </article>
+
+    <article class="job featured">
+      <div class="job-head">
+        <div>
+          <h3>Full-Stack Application Developer &amp; Automation Engineer</h3>
+          <p class="job-company">Independent <span>AstraDesk SaaS Platform</span></p>
+        </div>
+        <div class="job-meta">Concurrent / Ongoing</div>
       </div>
-    </header>
+      <p class="job-intro">Architecting and building a proprietary multi-platform SaaS product end-to-end — database schema, backend APIs, Flutter clients, and production cloud infrastructure.</p>
+      <ul>
+        <li>Design and maintain <strong>Supabase</strong> backend — PostgreSQL schema, SQL migrations, RPCs, Row Level Security, Auth, Storage, and Edge Functions for documents, invoicing, e-signatures, entitlements, and business profiles.</li>
+        <li>Build cross-platform app in <strong>Flutter/Dart</strong> (iOS, macOS, Android, Web) using AI-assisted development (Cursor IDE, GPT-5.5, Codex 5.3, Claude Opus) and agentic workflows.</li>
+        <li>Manage <strong>Apple Developer Program</strong> — Xcode builds, provisioning profiles, App Store Connect, TestFlight, and Transporter IPA distribution.</li>
+        <li>Deploy on <strong>Render</strong> and <strong>Cloudflare</strong> — static Flutter Web, Node.js APIs, DNS, CDN caching, and Turnstile bot protection.</li>
+        <li>Integrate <strong>Stripe Enterprise billing</strong> — subscription checkout, payment flows, and platform monetization.</li>
+        <li>Customer support via <strong>Zendesk</strong> and <strong>JIRA</strong> — first point of contact, issue analysis, engineering escalation, and customer education.</li>
+        <li>Own CI/CD — GitHub workflows, environment configuration, and post-deploy verification across web and native targets.</li>
+      </ul>
+      <div class="tech-tags"><span>Supabase</span><span>Flutter</span><span>Xcode</span><span>Render</span><span>Cloudflare</span><span>Stripe</span><span>JIRA</span><span>Zendesk</span><span>Cursor IDE</span></div>
+    </article>
 
-    <section class="block">
-      <h2>Professional Summary</h2>
-      <p>Based at <strong>LinkedIn's EMEA Headquarters in Dublin</strong> within the <strong>EMEA RIT (Regional IT) Department</strong>, facilitating the technical backbone of a global technology ecosystem and ensuring high-stakes enterprise environments remain resilient and scalable.</p>
-      <p>Proactive Technical Support Engineer with <strong>9+ years of experience</strong> in hands-on technical support, infrastructure troubleshooting, and escalated problem-solving. Proficient in SaaS platforms, identity ecosystems (Okta, Azure AD), endpoint management, and automation via PowerShell, Bash, and AI/LLM tooling. Partners with engineering and product teams to deliver systemic solutions beyond immediate fixes.</p>
-    </section>
-
-    <section class="block">
-      <h2>Technical Skills</h2>
-      <div class="skills-columns">
-        <div class="skill-group">
-          <h3>AI &amp; Automation</h3>
-          <p>OpenAI, Anthropic Claude, Google Gemini, Multi-Agent Workflows, Prompt Engineering, PowerShell, Bash, Python, Cursor IDE</p>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Technical Support Level II</h3>
+          <p class="job-company">Dropbox Sign <span>Contract</span></p>
         </div>
-        <div class="skill-group">
-          <h3>Identity &amp; Endpoints</h3>
-          <p>Okta, Active Directory, Azure AD, SSO, MFA, Autopilot/Intune, Workspace ONE, JAMF Pro</p>
-        </div>
-        <div class="skill-group">
-          <h3>SaaS &amp; Service Mgmt</h3>
-          <p>JIRA, Orbit, Zendesk, ServiceNow, Oracle DB, CRM, Stripe Enterprise, Slack Admin, Microsoft 365, Atlassian</p>
-        </div>
-        <div class="skill-group">
-          <h3>Infrastructure</h3>
-          <p>DNS, DHCP, VPNs, VDI, NEST, Ericsson Network Tools, RAN/Cell Tower Analysis, BitLocker/FileVault</p>
-        </div>
-        <div class="skill-group">
-          <h3>Full-Stack &amp; Cloud</h3>
-          <p>Supabase, Flutter, Render, Cloudflare, Xcode, App Store Connect, Transporter, Stripe Enterprise, JIRA, Zendesk, GitHub Actions</p>
-        </div>
+        <div class="job-meta">Sep 2024 – Mar 2025 · 7 mos<br>Ireland · Remote</div>
       </div>
-      <p class="skills-footer">ITIL-aligned Incident, Problem &amp; Change Management · Strict SLA adherence</p>
-    </section>
+      <p class="job-intro">Email and chat support across Dropbox's suite — first point of contact for analyzing technical issues, educating customers, and ensuring seamless experiences.</p>
+      <ul>
+        <li>Collaborated with engineering and product teams to escalate and resolve complex issues, contributing to feature enhancements.</li>
+        <li>Applied ITIL-aligned Incident and Problem Management for timely resolution and consistent service quality.</li>
+        <li>Deep expertise in <strong>Dropbox</strong>, <strong>Dropbox Sign</strong>, and <strong>Dropbox Fax</strong> — sync/sharing conflicts, Sign templates, API integrations, webhooks, audit trails, and fax transmission issues.</li>
+        <li>Structured technical diagnosis — reproducing issues, reviewing API logs, validating permissions, testing across browsers/OS, and isolating root causes.</li>
+        <li>Guided customers through template setup, bulk-send workflows, third-party integrations, and workspace security policies.</li>
+        <li>Used <strong>Zendesk</strong> for reporting, tracking, and resolving technical issues.</li>
+        <li><strong>Stripe Enterprise billing</strong> — subscription verification, financial updates, fraud detection alerts, and guiding users through billing features and plan changes.</li>
+        <li>Managed SaaS renewals, billing negotiations, and solution positioning with empathetic communication.</li>
+      </ul>
+    </article>
 
-    <section class="block">
-      <h2>Professional Experience</h2>
-
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Production Engineering &amp; Enterprise IT Support</h3>
-            <p class="company">LinkedIn EMEA HQ Dublin · EMEA RIT · HCLTech (Contract)</p>
-          </div>
-          <div class="dates">Jul 2025 – Present · Dublin · On-site</div>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Technical Account Executive</h3>
+          <p class="job-company">Infosys <span>Full-time · EE UK</span></p>
         </div>
-        <p class="job-intro">LinkedIn EMEA RIT onsite support — identity, MDM, new hire onboarding, M365, and global employee tooling.</p>
-        <ul>
-          <li>Okta Admin &amp; Microsoft Authenticator: enrollment, MFA registration, SSO, LDAP resets, security groups via ServiceNow/Slack.</li>
-          <li>Onboarded LinkedIn Recruiter, Sales Navigator, Tableau, Dynamics 365, and Office 365 — licences, SSO, and network access.</li>
-          <li>Compliant MacBook/Windows provisioning via Intune, AirWatch/Workspace ONE; hardware inventory tracking for stock, deploy, and returns.</li>
-          <li>User permissions &amp; profiles: security groups, app access, mailbox/SharePoint rights, VPN, and role-based tooling for day-one readiness.</li>
-          <li>Printer &amp; print network support — drivers, queue config, mapping, jam/connectivity troubleshooting.</li>
-          <li>ServiceNow, JIRA &amp; Orbit tickets — cross-department liaison with engineering/infrastructure to resolve end-user issues; Slack coordination.</li>
-          <li>VDI (Horizon), BitLocker/FileVault, kernel panics; M365 sync/permissions; hardware inventory.</li>
-        </ul>
-      </article>
+        <div class="job-meta">Jun 2021 – Sep 2024 · 3 yrs 4 mos<br>Greater Dublin · Remote</div>
+      </div>
+      <p class="job-intro">EE UK mobile and fixed-line infrastructure for B2B and B2C customers — network diagnostics, contract lifecycle, and high-resolution case ownership.</p>
+      <ul>
+        <li>Managed <strong>B2B and B2C contracts</strong> — onboarding, renewals, plan upgrades, amendments, and retention-focused solution positioning.</li>
+        <li>Operated <strong>NEST</strong> — queried cell site records, updated infrastructure locations, checked element status, correlated customer location with serving cells, and packaged faults for BT engineering.</li>
+        <li>Used <strong>Ericsson network diagnostics</strong> — RAN/cell tower health, site alarms, sector availability, subscriber attach/detach, and signal/session analysis.</li>
+        <li>Connectivity workflow: SIM validation → device registration → Ericsson signal review → NEST cross-reference → root cause isolation → ServiceNow escalation.</li>
+        <li>Liaised with <strong>BT engineering</strong> on ingress, backhaul, and downtime — translating diagnostic output into repair strategies.</li>
+        <li>Escalated via <strong>ServiceNow</strong> to network operations, billing, device fulfilment, and insurance teams.</li>
+        <li><strong>Credit control and account management</strong> — billing inquiries, discounts, refunds, payment plans, and accurate financial records.</li>
+        <li><strong>Device lifecycle</strong> — diagnostics, repair booking, replacement fulfilment, and insurance claim coordination.</li>
+        <li>ITIL-aligned case management with high FCR; mentored new hires on NEST/Ericsson workflows.</li>
+      </ul>
+      <div class="tech-tags"><span>NEST</span><span>Ericsson OSS</span><span>ServiceNow</span><span>B2B</span><span>B2C</span><span>RAN Diagnostics</span></div>
+    </article>
 
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Full-Stack Application Developer &amp; Automation Engineer</h3>
-            <p class="company">Independent · AstraDesk SaaS Platform</p>
-          </div>
-          <div class="dates">Concurrent / Ongoing</div>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Technical Support &amp; Customer Care</h3>
+          <p class="job-company">Abtran <span>Full-time</span></p>
         </div>
-        <p class="job-intro">End-to-end proprietary SaaS — Supabase backend, Flutter clients, Render/Cloudflare production, and full Apple release pipeline.</p>
-        <ul>
-          <li>Supabase: PostgreSQL schema, SQL migrations, RPCs, Row Level Security, Auth, Storage, and Edge Functions for documents, invoicing, e-signatures, and entitlements.</li>
-          <li>Flutter/Dart cross-platform development (iOS, macOS, Android, Web) with AI-assisted tooling (Cursor IDE, GPT-5.5, Codex, Claude Opus) and agentic workflows.</li>
-          <li>Apple ecosystem: Xcode, App Store Connect, TestFlight, and Transporter IPA distribution; Render/Cloudflare production deployment.</li>
-          <li>Stripe Enterprise billing integration; Zendesk for customer case management and JIRA for engineering ticketing as first point of contact — analyzing issues, escalating to dev teams, and educating customers on product features.</li>
-        </ul>
-      </article>
+        <div class="job-meta">Jul – Dec 2018 · 6 mos<br>Greater Dublin</div>
+      </div>
+      <p class="job-intro">First point of contact for business and residential customers — technical resolution, billing, credit control, and infrastructure coordination.</p>
+      <ul>
+        <li>Resolved technical queries at first contact — diagnosing service issues and determining escalation paths.</li>
+        <li>Used <strong>Oracle DB</strong> and <strong>CRM databases</strong> to monitor accounts, service status, and case history.</li>
+        <li>Liaised with infrastructure/engineering teams; maintained <strong>utilities file and register</strong> for engineering requests.</li>
+        <li><strong>Credit control</strong> — balance recovery, payment plans, and collection activity aligned with CRM records.</li>
+        <li><strong>Billing inquiries</strong> — invoice disputes, tariff corrections, and refund/credit requests.</li>
+        <li>End-to-end case handling — inbound/outbound calls, callbacks, complaint escalation, and SLA-driven resolution.</li>
+      </ul>
+      <div class="tech-tags"><span>Oracle DB</span><span>CRM</span><span>Utilities Register</span><span>Credit Control</span></div>
+    </article>
 
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Technical Support Level II</h3>
-            <p class="company">Dropbox Sign (Contract)</p>
-          </div>
-          <div class="dates">Sep 2024 – Mar 2025 · Remote</div>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Technical Support Executive</h3>
+          <p class="job-company">Concentrix <span>BT Broadband Project · Convergys</span></p>
         </div>
-        <p class="job-intro">Email and chat support across Dropbox's product suite — troubleshooting, customer education, and seamless end-user experiences.</p>
-        <ul>
-          <li>Escalated complex issues with engineering and product teams; ITIL-aligned Incident and Problem Management.</li>
-          <li>Dropbox product expertise: core sync/sharing/team admin; Sign templates, API, webhooks, signer routing; Fax transmission and provisioning — with structured diagnosis via API logs, permissions checks, reproduction testing, and environment validation.</li>
-          <li>Stripe Enterprise billing — subscription verification, financial/account updates, fraud detection review, and guiding customers through billing features and plan changes.</li>
-          <li>Managed SaaS renewals, billing negotiations, and solution positioning with empathetic, retention-focused communication.</li>
-        </ul>
-      </article>
+        <div class="job-meta">Jan 2017 – Jul 2018 · 1 yr 7 mos<br>Greater Dublin</div>
+      </div>
+      <p class="job-intro">BT Broadband programme — connectivity faults, infrastructure diagnostics, engineering dispatch, billing, and contract lifecycle.</p>
+      <ul>
+        <li>Ran <strong>BT Broadband diagnostic tooling</strong> — line tests, sync/stability checks, noise margin review, and fault localisation (premises, loop, cabinet, exchange, or core network).</li>
+        <li>Fault workflow: symptom capture → remote diagnostics → infrastructure correlation → <strong>BT field engineering dispatch</strong> with accurate fault data.</li>
+        <li>Escalated ingress and backhaul issues with BT engineering — diagnostic evidence and SLA context.</li>
+        <li>Managed <strong>contracts and renewals</strong> — plan upgrades, tariff changes, and service amendments.</li>
+        <li><strong>Credit control and billing</strong> — payment plans, balance recovery, disputes, adjustments, and refunds.</li>
+        <li>ITIL-aligned case management with high FCR; mentored new hires on broadband diagnostic workflows.</li>
+      </ul>
+      <div class="tech-tags"><span>BT Broadband</span><span>Line Diagnostics</span><span>BT Engineering</span><span>CRM</span></div>
+    </article>
 
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Technical Account Executive</h3>
-            <p class="company">Infosys · EE UK (Full-time)</p>
-          </div>
-          <div class="dates">Jun 2021 – Sep 2024 · Remote</div>
+    <article class="job">
+      <div class="job-head">
+        <div>
+          <h3>Regional Sales</h3>
+          <p class="job-company">Gekko Group <span>Field Marketing &amp; Experiential</span></p>
         </div>
-        <p class="job-intro">EE UK B2B/B2C telecoms — contract lifecycle, NEST &amp; Ericsson network diagnostics, and high-resolution case ownership.</p>
-        <ul>
-          <li>B2B &amp; B2C contracts: onboarding, maintenance, renewals, upgrades, and amendments for new and existing customers.</li>
-          <li>NEST: query cell site records, update infrastructure locations, check element status, correlate customer location with serving cells, and package faults for BT engineering.</li>
-          <li>Ericsson tools: analyse cell tower/RAN health, site alarms, sector availability, subscriber attach/detach, and signal/session data to isolate network vs device faults.</li>
-          <li>Diagnostic workflow: SIM validation → device registration check → Ericsson signal/session review → NEST site cross-reference → ServiceNow escalation to network, billing, or device teams.</li>
-          <li>Credit control (discounts, refunds, billing); device repair/replacement; insurance liaison; ITIL case management with high FCR.</li>
-        </ul>
-      </article>
+        <div class="job-meta">Nov 2014 – Jul 2016 · 1 yr 9 mos<br>Ireland &amp; UK</div>
+      </div>
+      <p class="job-intro">Achieved sales targets while educating customers on product features, benefits, and technology.</p>
+      <ul>
+        <li>Assisted customers with product selection and relayed detailed product knowledge.</li>
+        <li>Built customer relationships to drive brand loyalty and long-term growth.</li>
+        <li>Liaised with suppliers and reported sales, stock, and marketing data to head office daily.</li>
+      </ul>
+    </article>
+  </section>
 
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Technical Support &amp; Customer Care</h3>
-            <p class="company">Abtran (Full-time)</p>
-          </div>
-          <div class="dates">Jul – Dec 2018</div>
-        </div>
-        <p class="job-intro">First-point support for business and residential customers — technical resolution, billing, and infrastructure coordination.</p>
-        <ul>
-          <li>Oracle DB &amp; CRM: monitored accounts, service status, and case history; validated billing and incident data before escalation.</li>
-          <li>Liaised with infrastructure/engineering teams; maintained utilities file &amp; register for engineering requests and service restoration.</li>
-          <li>Credit control — collections, payment plans, balance recovery; billing inquiries, disputes, tariff corrections, and credits.</li>
-          <li>Full case handling: inbound/outbound calls, callbacks, complaint escalation, and SLA-driven resolution.</li>
-        </ul>
-      </article>
+  <section class="section">
+    <span class="section-label">Background</span>
+    <h2>Education</h2>
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <h3>Degree in Information Technology</h3>
+        <p>Quality and Qualifications Ireland (QQI)</p>
+      </div>
+    </div>
+  </section>
 
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Technical Support Executive</h3>
-            <p class="company">Concentrix · BT Broadband (Convergys)</p>
-          </div>
-          <div class="dates">Jan 2017 – Jul 2018 · 1 yr 7 mos</div>
-        </div>
-        <p class="job-intro">BT Broadband first-line support — infrastructure diagnostics, engineering dispatch, billing, and contract lifecycle.</p>
-        <ul>
-          <li>Diagnostic tooling: line tests, sync/stability checks, noise margin review — pinpointing faults at premises, loop, cabinet, exchange, or core network.</li>
-          <li>Fault workflow: symptom capture → remote diagnostics → infrastructure correlation → BT field engineering dispatch with accurate fault data.</li>
-          <li>BT engineering escalation for ingress/backhaul; contract renewals, plan upgrades, and tariff amendments for new and existing customers.</li>
-          <li>Credit control &amp; billing adjustments — payment plans, disputes, refunds; ITIL case management with high FCR; mentored new hires.</li>
-        </ul>
-      </article>
-
-      <article class="job compact">
-        <div class="job-head">
-          <div>
-            <h3>Regional Sales</h3>
-            <p class="company">Gekko Group · Field Marketing</p>
-          </div>
-          <div class="dates">Nov 2014 – Jul 2016 · Ireland &amp; UK</div>
-        </div>
-        <ul>
-          <li>Achieved sales targets; product education, customer relations, and daily reporting to head office.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="block education">
-      <h2>Education</h2>
-      <p><strong>Degree in Information Technology</strong> — Quality and Qualifications Ireland (QQI)</p>
-    </section>
-  </div>
 </body>
 </html>
