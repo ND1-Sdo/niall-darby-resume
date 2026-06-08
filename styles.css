@@ -532,6 +532,13 @@ a:hover {
   content: '· ';
 }
 
+.timeline-intro {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  line-height: 1.55;
+}
+
 .timeline-content ul {
   list-style: none;
   display: flex;
