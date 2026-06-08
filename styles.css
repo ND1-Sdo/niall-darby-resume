@@ -608,15 +608,41 @@ a:hover {
 }
 
 /* Education */
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .education-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   background: var(--surface);
   border-radius: var(--radius-lg);
-  padding: 36px 40px;
+  padding: 28px 32px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+}
+
+.education-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.education-org {
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.education-detail {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .education-icon {
