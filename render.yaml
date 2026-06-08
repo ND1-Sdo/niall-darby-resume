@@ -1,0 +1,7 @@
+# Standalone resume site — not connected to AstraDesk / Start Tek.
+services:
+  - type: web
+    name: niall-darby-resume
+    runtime: static
+    buildCommand: echo "Static resume site — no build required"
+    staticPublishPath: ./
