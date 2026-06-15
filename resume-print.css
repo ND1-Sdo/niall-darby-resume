@@ -2,7 +2,7 @@
 
 @page {
   size: A4;
-  margin: 12mm 12mm 14mm;
+  margin: 10mm 11mm 12mm;
 }
 
 :root {
@@ -76,7 +76,34 @@ body {
 
 /* Sections */
 .section {
-  margin-bottom: 11px;
+  margin-bottom: 9px;
+}
+
+.section-heading {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.section-heading .section-label {
+  display: block;
+  font-size: 6.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.section-heading h2 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 13pt;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
 }
 
 .section-label {
@@ -97,6 +124,34 @@ body {
   margin-bottom: 8px;
   padding-bottom: 4px;
   border-bottom: 1px solid var(--border);
+}
+
+/* Page 2: keep Professional Experience heading and body together */
+.section-experience {
+  break-before: page;
+  page-break-before: always;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+  margin-bottom: 0;
+}
+
+.section-experience .section-heading {
+  margin-bottom: 4px;
+}
+
+.section-experience .section-heading h2 {
+  margin-bottom: 4px;
+  padding-bottom: 3px;
+}
+
+.jobs-flow {
+  column-count: 2;
+  column-gap: 8px;
+}
+
+.section-education {
+  break-before: page;
+  page-break-before: always;
 }
 
 /* Summary */
@@ -166,13 +221,14 @@ body {
 
 /* Jobs */
 .job {
-  margin-bottom: 10px;
-  padding: 8px 10px;
+  margin-bottom: 6px;
+  padding: 5px 7px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
   background: #fff;
-  break-inside: auto;
-  page-break-inside: auto;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }
 
 .job.featured {
@@ -187,6 +243,37 @@ body {
   margin-bottom: 4px;
   break-after: avoid;
   page-break-after: avoid;
+}
+
+.section-experience .job h3 {
+  font-size: 8pt;
+}
+
+.section-experience .job-meta {
+  font-size: 6.5pt;
+}
+
+.section-experience .job-company {
+  font-size: 7pt;
+}
+
+.section-experience .job-intro {
+  display: none;
+}
+
+.section-experience .job ul {
+  padding-left: 11px;
+  margin-bottom: 2px;
+}
+
+.section-experience .job li {
+  font-size: 6.8pt;
+  line-height: 1.32;
+  margin-bottom: 1px;
+}
+
+.section-experience .tech-tags {
+  display: none;
 }
 
 .job h3 {
