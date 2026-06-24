@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Niall Darby | PlayStation IT Engineering Support</title>
+  <title>Niall Darby | IT Engineering Support — Interview Presentation</title>
   <style>
     :root {
-      --ps-blue-deep: #002a6e;
-      --ps-blue: #003087;
-      --ps-blue-mid: #003791;
-      --ps-blue-bright: #1a5fc4;
-      --ps-blue-light: #2d7ae8;
-      --ps-bg: #003087;
-      --ps-panel: rgba(0, 35, 90, 0.55);
-      --ps-surface: rgba(0, 45, 110, 0.65);
-      --ps-surface-2: rgba(0, 55, 130, 0.5);
-      --ps-text: #ffffff;
-      --ps-muted: rgba(255, 255, 255, 0.72);
-      --ps-line: rgba(255, 255, 255, 0.18);
-      --ps-shadow: rgba(0, 15, 50, 0.55);
-      --ps-highlight: rgba(255, 255, 255, 0.22);
-      --ps-triangle: #5ee06a;
-      --ps-circle: #ff7b6b;
-      --ps-cross: #7ec0ff;
-      --ps-square: #e89de8;
-      --3d-lit: linear-gradient(145deg, #3d8ae8 0%, #003580 55%, #002060 100%);
-      --3d-shadow: 5px 8px 16px rgba(0, 20, 60, 0.5), -2px -2px 6px rgba(80, 140, 255, 0.12);
-      --banner-h: 52px;
+      --ps-blue-deep: #0f172a;
+      --ps-blue: #1e293b;
+      --ps-blue-mid: #243044;
+      --ps-blue-bright: #334155;
+      --ps-blue-light: #475569;
+      --ps-bg: #1e293b;
+      --ps-panel: rgba(15, 23, 42, 0.55);
+      --ps-surface: rgba(30, 41, 59, 0.65);
+      --ps-surface-2: rgba(51, 65, 85, 0.5);
+      --ps-text: #f8fafc;
+      --ps-muted: rgba(248, 250, 252, 0.72);
+      --ps-line: rgba(248, 250, 252, 0.18);
+      --ps-shadow: rgba(2, 6, 23, 0.55);
+      --ps-highlight: rgba(248, 250, 252, 0.22);
+      --ps-triangle: #86efac;
+      --ps-circle: #fca5a5;
+      --ps-cross: #93c5fd;
+      --ps-square: #d8b4fe;
+      --3d-lit: linear-gradient(145deg, #64748b 0%, #334155 55%, #1e293b 100%);
+      --3d-shadow: 5px 8px 16px rgba(2, 6, 23, 0.5), -2px -2px 6px rgba(148, 163, 184, 0.12);
+      --banner-h: 0px;
       --subheader-h: 42px;
-      --chrome-top: calc(var(--banner-h) + var(--subheader-h) + 2px);
+      --chrome-top: calc(var(--subheader-h) + 2px);
       --content-max: 820px;
       --content-wide: min(1120px, 94vw);
       --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -140,58 +140,22 @@
 
     body:not(.loaded) .deck,
     body:not(.loaded) .brand-header,
-    body:not(.loaded) .ps-banner-wrap,
     body:not(.loaded) .footer { opacity: 0; }
-    body.loaded .ps-banner-wrap { animation: chromeSlideDown 0.55s var(--ease-out-expo) forwards; }
-    body.loaded .brand-header { animation: chromeSlideDown 0.55s var(--ease-out-expo) 0.06s forwards; opacity: 0; }
+    body.loaded .brand-header { animation: chromeSlideDown 0.55s var(--ease-out-expo) forwards; }
     body.loaded .deck { animation: fadeScaleIn 0.6s var(--ease-out-expo) 0.1s forwards; opacity: 0; }
     body.loaded .footer { animation: chromeSlideDown 0.5s var(--ease-out-expo) 0.15s forwards; opacity: 0; }
 
-    /* Official PlayStation blue — centre-bright radial like the banner */
+    /* Neutral slate background */
     .ps-bg {
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
       background:
-        radial-gradient(ellipse 90% 70% at 50% 45%, #0048b8 0%, #003087 45%, #002a6e 100%);
+        radial-gradient(ellipse 90% 70% at 50% 45%, #334155 0%, #1e293b 45%, #0f172a 100%);
       transform-origin: center center;
       animation: bgDrift 18s ease-in-out infinite;
     }
 
-    /* Watermark 3D shapes — decorative, never competes with content */
-    .ps-watermark {
-      position: fixed; right: 0; top: var(--chrome-top); bottom: 52px;
-      width: min(28vw, 340px);
-      display: flex; gap: 14px; align-items: center; justify-content: center;
-      z-index: 1; pointer-events: none; opacity: 0.09;
-      mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 0%, transparent 85%);
-      -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 0%, transparent 85%);
-    }
-    .shape-3d {
-      position: relative; display: flex; align-items: center; justify-content: center;
-      color: transparent;
-    }
-    .shape-3d svg {
-      width: clamp(48px, 8vw, 88px); height: clamp(48px, 8vw, 88px);
-      filter: drop-shadow(6px 10px 14px rgba(0, 15, 50, 0.55));
-    }
-    .shape-3d:nth-child(1) { animation: shapeFloat 7s ease-in-out infinite; }
-    .shape-3d:nth-child(2) { animation: shapeFloat 8s ease-in-out 0.8s infinite; }
-    .shape-3d:nth-child(3) { animation: shapeFloat 6.5s ease-in-out 1.4s infinite; }
-    .shape-3d:nth-child(4) { animation: shapeFloat 7.5s ease-in-out 0.4s infinite; }
-    .shape-3d .fill { fill: url(#ps3dGrad); }
-    .shape-3d .stroke { stroke: rgba(255,255,255,0.12); stroke-width: 0.5; }
-
-    .ps-banner-wrap {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 30;
-      background: var(--ps-blue);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .ps-banner-img {
-      width: 100%; height: var(--banner-h); object-fit: contain; object-position: left center;
-      display: block; padding: 6px 28px;
-    }
-
     .progress-track {
-      position: fixed; top: var(--banner-h); left: 0; height: 2px;
+      position: fixed; top: 0; left: 0; height: 2px;
       background: rgba(0, 20, 60, 0.4); z-index: 31; width: 100%;
     }
     .progress-fill {
@@ -203,11 +167,11 @@
     }
 
     .brand-header {
-      position: fixed; top: calc(var(--banner-h) + 2px); left: 0; right: 0;
+      position: fixed; top: 2px; left: 0; right: 0;
       height: var(--subheader-h);
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 clamp(20px, 3vw, 36px); z-index: 25;
-      background: rgba(0, 32, 82, 0.82);
+      background: rgba(15, 23, 42, 0.82);
       border-bottom: 1px solid var(--ps-line);
       backdrop-filter: blur(16px);
     }
@@ -243,14 +207,6 @@
       border-color: rgba(255,255,255,0.45);
       color: #fff;
       box-shadow: 0 0 16px rgba(255,255,255,0.12);
-    }
-    .ps-btn.active-section .sym { animation: symPulse 2.5s ease-in-out infinite; }
-    .ps-btn .sym {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 15px; height: 15px; font-size: 9px; font-weight: 800;
-      background: var(--3d-lit); border-radius: 3px;
-      box-shadow: 1px 2px 4px rgba(0,20,60,0.4), inset 1px 1px 0 var(--ps-highlight);
-      color: rgba(255,255,255,0.95);
     }
     .nav-utils .ps-btn { padding: 5px 9px; background: transparent; border-color: rgba(255,255,255,0.12); color: var(--ps-muted); box-shadow: none; }
     .nav-utils .ps-btn:hover { color: #fff; }
@@ -689,10 +645,10 @@
       background: var(--3d-lit); box-shadow: var(--3d-shadow);
       font-size: 13px; font-weight: 800; line-height: 28px; text-align: center;
     }
-    ul.bullets li[data-icon="tri"]::before { content: "△"; color: var(--ps-triangle); }
-    ul.bullets li[data-icon="o"]::before { content: "○"; color: var(--ps-circle); }
-    ul.bullets li[data-icon="x"]::before { content: "✕"; color: var(--ps-cross); }
-    ul.bullets li[data-icon="sq"]::before { content: "□"; color: var(--ps-square); }
+    ul.bullets li[data-icon="tri"]::before { content: "•"; color: var(--ps-triangle); }
+    ul.bullets li[data-icon="o"]::before { content: "•"; color: var(--ps-circle); }
+    ul.bullets li[data-icon="x"]::before { content: "•"; color: var(--ps-cross); }
+    ul.bullets li[data-icon="sq"]::before { content: "•"; color: var(--ps-square); }
 
     .role-fit { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
     .role-chip {
@@ -724,7 +680,7 @@
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 25;
       display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
       padding: 8px clamp(20px, 3vw, 36px); height: 48px;
-      background: rgba(0, 28, 72, 0.9);
+      background: rgba(15, 23, 42, 0.9);
       border-top: 1px solid var(--ps-line);
       font-size: 11px; color: var(--ps-muted);
       backdrop-filter: blur(16px);
@@ -782,7 +738,6 @@
         transition-duration: 0.01ms !important;
       }
       .ps-bg { animation: none; }
-      .shape-3d { animation: none !important; }
       .progress-fill { animation: none; }
     }
 
@@ -790,13 +745,12 @@
       .fix-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
       .slide { padding-left: 20px; padding-right: 20px; }
       .brand-context { font-size: 8px; }
-      .nav-sections .ps-btn span:not(.sym) { display: none; }
-      .ps-watermark { display: none; }
+      .nav-sections .ps-btn { padding: 5px 7px; font-size: 8px; }
     }
     @media print {
       @page { size: landscape; margin: 0; }
-      html, body { overflow: visible; height: auto; background: #003087 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .ps-bg, .ps-watermark, .ps-banner-wrap, .footer, .brand-header, .progress-track, .overlay, .toast, .expand-all, .fix-toggle { display: none !important; }
+      html, body { overflow: visible; height: auto; background: #1e293b !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .ps-bg, .footer, .brand-header, .progress-track, .overlay, .toast, .expand-all, .fix-toggle { display: none !important; }
       .slide { position: relative !important; opacity: 1 !important; transform: none !important; page-break-after: always; min-height: 100vh; padding: 36px 44px; padding-top: 36px !important; }
       .fix-body { max-height: none !important; padding: 0 16px 16px !important; }
       .fix-result { max-height: none !important; opacity: 1 !important; margin-top: 10px !important; padding: 10px 12px !important; }
@@ -809,39 +763,18 @@
   <div id="fx-layer" aria-hidden="true"></div>
   <div class="ps-bg"></div>
 
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <linearGradient id="ps3dGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#5aa8f5"/>
-        <stop offset="45%" stop-color="#003d8f"/>
-        <stop offset="100%" stop-color="#001a45"/>
-      </linearGradient>
-    </defs>
-  </svg>
-
-  <div class="ps-watermark" aria-hidden="true">
-    <div class="shape-3d"><svg viewBox="0 0 64 64"><polygon class="fill stroke" points="32,10 54,50 10,50"/></svg></div>
-    <div class="shape-3d"><svg viewBox="0 0 64 64"><circle class="fill stroke" cx="32" cy="32" r="20"/></svg></div>
-    <div class="shape-3d"><svg viewBox="0 0 64 64"><line class="stroke" x1="18" y1="18" x2="46" y2="46" stroke="url(#ps3dGrad)" stroke-width="9" stroke-linecap="round"/><line class="stroke" x1="46" y1="18" x2="18" y2="46" stroke="url(#ps3dGrad)" stroke-width="9" stroke-linecap="round"/></svg></div>
-    <div class="shape-3d"><svg viewBox="0 0 64 64"><rect class="fill stroke" x="14" y="14" width="36" height="36" rx="2"/></svg></div>
-  </div>
-
-  <div class="ps-banner-wrap">
-    <img class="ps-banner-img" src="assets/ps-official-banner.png" alt="PlayStation" />
-  </div>
-
   <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
 
   <header class="brand-header">
     <div class="brand-left">
-      <div class="brand-context">Sony Interactive Entertainment<br/>Candidate Overview · <span class="brand-sub">Niall Darby</span></div>
+      <div class="brand-context">IT Engineering Support<br/>Candidate Overview · <span class="brand-sub">Niall Darby</span></div>
     </div>
     <div class="ps-nav-shapes">
       <div class="nav-sections">
-        <button class="ps-btn tri active-section" data-slide="0" data-section="0"><span class="sym">△</span> Intro</button>
-        <button class="ps-btn o" data-slide="3" data-section="3"><span class="sym">○</span> Fixes</button>
-        <button class="ps-btn x" data-slide="5" data-section="5"><span class="sym">✕</span> Product</button>
-        <button class="ps-btn sq" data-slide="8" data-section="8"><span class="sym">□</span> Scenarios</button>
+        <button class="ps-btn tri active-section" data-slide="0" data-section="0">Intro</button>
+        <button class="ps-btn o" data-slide="3" data-section="3">Fixes</button>
+        <button class="ps-btn x" data-slide="5" data-section="5">Product</button>
+        <button class="ps-btn sq" data-slide="8" data-section="8">Scenarios</button>
       </div>
       <div class="nav-divider" aria-hidden="true"></div>
       <div class="nav-utils">
@@ -939,7 +872,7 @@
           <h2>Click Fix Guide — then tick each step</h2>
         </div>
         <div class="slide-toolbar">
-          <p class="hint-bar"><strong>△ ○ ✕ □</strong> Tap <strong>Fix Guide</strong> → click steps to complete. Hit <strong>▶ Walkthrough</strong> for a live demo.</p>
+          <p class="hint-bar"><strong>Fix guides</strong> — Tap <strong>Fix Guide</strong> → click steps to complete. Hit <strong>▶ Walkthrough</strong> for a live demo.</p>
           <div class="slide-toolbar-actions">
             <button class="walkthrough-btn" type="button" data-walkthrough>▶ Walkthrough</button>
             <button class="reset-fix-btn" type="button" data-reset-fix>↺ Reset</button>
@@ -950,7 +883,7 @@
 
           <div class="fix-card tri" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">△</div>
+              <div class="fix-sym">1</div>
               <div class="fix-meta">
                 <div class="fix-title">Intune / Autopilot enrollment failure</div>
                 <div class="fix-problem">New hire blocked — no O365 or role apps on day one.</div>
@@ -973,7 +906,7 @@
 
           <div class="fix-card o" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">○</div>
+              <div class="fix-sym">2</div>
               <div class="fix-meta">
                 <div class="fix-title">Workspace ONE · Mac non-compliant</div>
                 <div class="fix-problem">Mac flagged non-compliant — FileVault or cert policy failing.</div>
@@ -995,7 +928,7 @@
 
           <div class="fix-card x" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">✕</div>
+              <div class="fix-sym">3</div>
               <div class="fix-meta">
                 <div class="fix-title">Okta / SSO lockout</div>
                 <div class="fix-problem">SSO failure blocking Recruiter, Tableau, Dynamics access.</div>
@@ -1017,7 +950,7 @@
 
           <div class="fix-card sq" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">□</div>
+              <div class="fix-sym">4</div>
               <div class="fix-meta">
                 <div class="fix-title">Omnissa Horizon VDI rejection</div>
                 <div class="fix-problem">Remote engineer — VDI connection rejected, cert mismatch.</div>
@@ -1111,7 +1044,7 @@
 
           <div class="fix-card tri" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">△</div>
+              <div class="fix-sym">1</div>
               <div class="fix-meta">
                 <div class="fix-title">Sign · Signer can't complete</div>
                 <div class="fix-problem">User: "Link expired" / embedded signing blank / signer stuck on one field.</div>
@@ -1133,7 +1066,7 @@
 
           <div class="fix-card o" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">○</div>
+              <div class="fix-sym">2</div>
               <div class="fix-meta">
                 <div class="fix-title">Sign · Webhook / API integration</div>
                 <div class="fix-problem">Developer's CRM stuck "pending" — signature completed but webhook never fired.</div>
@@ -1155,7 +1088,7 @@
 
           <div class="fix-card x" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">✕</div>
+              <div class="fix-sym">3</div>
               <div class="fix-meta">
                 <div class="fix-title">Fax · Sent but not received</div>
                 <div class="fix-problem">User: fax shows delivered in Dropbox — recipient says nothing arrived.</div>
@@ -1177,7 +1110,7 @@
 
           <div class="fix-card sq" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">□</div>
+              <div class="fix-sym">4</div>
               <div class="fix-meta">
                 <div class="fix-title">Fax · Can't send / credits &amp; format</div>
                 <div class="fix-problem">User blocked: "Insufficient pages," PDF rejected, or cover page error.</div>
@@ -1282,7 +1215,7 @@
 
           <div class="fix-card tri" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">△</div>
+              <div class="fix-sym">1</div>
               <div class="fix-meta">
                 <div class="fix-title">Engineer: Mac won't build (Xcode)</div>
                 <div class="fix-problem">Slack: "Signing failed — can't ship my build."</div>
@@ -1305,7 +1238,7 @@
 
           <div class="fix-card o" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">○</div>
+              <div class="fix-sym">2</div>
               <div class="fix-meta">
                 <div class="fix-title">Engineer: GitHub access failure</div>
                 <div class="fix-problem">Cannot push / clone — auth or SSO error.</div>
@@ -1327,7 +1260,7 @@
 
           <div class="fix-card x" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">✕</div>
+              <div class="fix-sym">3</div>
               <div class="fix-meta">
                 <div class="fix-title">Frustrated engineer in Slack</div>
                 <div class="fix-problem">High-pressure live channel — needs calm ownership.</div>
@@ -1348,7 +1281,7 @@
 
           <div class="fix-card sq" data-fix>
             <div class="fix-head">
-              <div class="fix-sym">□</div>
+              <div class="fix-sym">4</div>
               <div class="fix-meta">
                 <div class="fix-title">New engineer day-one onboarding</div>
                 <div class="fix-problem">Full access verification before handoff.</div>
@@ -1413,7 +1346,7 @@
   <div class="toast" id="toast"></div>
   <div class="overlay" id="overlay">
     <div class="overlay-panel">
-      <h3>PlayStation Presentation Controls</h3>
+      <h3>Presentation Controls</h3>
       <dl>
         <dt>Fix Guide</dt><dd>Click to expand — one card focuses at a time</dd>
         <dt>Steps</dt><dd>Click to tick ✓ — sparks + progress bar fills</dd>
@@ -1422,7 +1355,7 @@
         <dt>Expand All</dt><dd>Open every guide (use for PDF only)</dd>
         <dt>→ / Space</dt><dd>Next slide</dd>
         <dt>P</dt><dd>Export PDF (Background graphics ON)</dd>
-        <dt>△ ○ ✕ □</dt><dd>Jump to sections</dd>
+        <dt>Nav</dt><dd>Jump to Intro, Fixes, Product, or Scenarios</dd>
       </dl>
       <button class="overlay-close" id="overlayClose">Close</button>
     </div>
@@ -1454,7 +1387,7 @@
       d.onclick = (e) => { e.stopPropagation(); go(idx); };
       dotsEl.appendChild(d);
       const ph = slide.querySelector(".print-header");
-      if (ph) ph.textContent = "Niall Darby · Sony Interactive Entertainment · Slide " + (idx + 1) + " — " + (slide.dataset.title || "");
+      if (ph) ph.textContent = "Niall Darby · IT Engineering Support · Slide " + (idx + 1) + " — " + (slide.dataset.title || "");
     });
 
     document.querySelectorAll("[data-slide]").forEach((btn) => {
